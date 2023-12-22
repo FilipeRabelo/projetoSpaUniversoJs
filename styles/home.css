@@ -57,9 +57,8 @@ body{
 
 
 @media (max-width: 900px) {
-  #btnDiv{
-    color: red;
-    /*transition: none;*/
+  #containerHome, div, h1, a{
+    align-content: flex-start;
   }
 }
 
