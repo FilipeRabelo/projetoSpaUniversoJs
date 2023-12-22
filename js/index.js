@@ -12,18 +12,18 @@ window.onpopstate = () => router.handle();
 
 window.route = () => router.route();
 
-document.addEventListener('DOMContentLoaded',function (){
-  var caminhoAtual = window.location.pathname;
-
-  var links = document.querySelector("nav a");
-
-  links.forEach(function (link){
-    link.classList.remove('ativo')
-  });
-
-  var linkAtivo = document.querySelector('nav a[href="' + caminhoAtual + '"]');
-  if(linkAtivo){
-    linkAtivo.classList.add('ativo');
-  }
-
-});
+// document.addEventListener('DOMContentLoaded',function (){
+//   var caminhoAtual = window.location.pathname;
+//
+//   var links = document.querySelector("nav a");
+//
+//   links.forEach(function (link){
+//     link.classList.remove('ativo')
+//   });
+//
+//   var linkAtivo = document.querySelector('nav a[href="' + caminhoAtual + '"]');
+//   if(linkAtivo){
+//     linkAtivo.classList.add('ativo');
+//   }
+//
+// });
