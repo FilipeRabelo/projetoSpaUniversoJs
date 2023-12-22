@@ -1,5 +1,5 @@
 body{
-  background: url("../img/imgHome.png") no-repeat center ;
+  background: url("../img/imgHome.png") no-repeat fixed center ;
   background-size: cover;
   overflow: hidden;
 
@@ -54,9 +54,6 @@ body{
   align-items: center;
   gap: 8px;
 }
-
-
-
 
 
 

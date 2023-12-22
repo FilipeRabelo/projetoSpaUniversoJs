@@ -48,10 +48,15 @@ a:hover{
   font-weight: 700;
 }
 
-
-
-
-
+@media (max-width: 900px) {
+  header, nav, a {
+    font-size: 20px;
+    width: auto;
+    margin: auto;
+    padding: 0;
+    display: flex;
+  }
+}
 
 
 

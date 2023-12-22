@@ -1,5 +1,5 @@
 body{
-  background: url("../img/imgExploracao.png") no-repeat center;
+  background: url("../img/imgExploracao.png") no-repeat fixed center;
   background-size: cover;
   overflow: hidden;
 
@@ -39,4 +39,19 @@ p{
   font-style: normal;
   font-size: 18px;
   line-height: 28px;
+}
+
+@media (max-width: 900px) {
+  main{
+    width: auto;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    place-content: flex-start;
+    transition: 1s;
+  }
+  h1{
+    transition: none;
+    margin-top: 0;
+  }
 }
