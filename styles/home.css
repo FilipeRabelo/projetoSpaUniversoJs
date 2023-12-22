@@ -1,0 +1,81 @@
+body{
+  background: url("../img/imgHome.png") no-repeat center ;
+  background-size: cover;
+  overflow: hidden;
+
+  height: 100vh;
+  place-content: center;
+  place-items: center;
+}
+
+#containerHome{
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100vh
+}
+
+#homeH1{
+  color: #E1E1E6;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#btnDiv{
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  margin-bottom: 294px;
+  transition: 1s;
+}
+
+#btnHome:hover{
+  transition: background-color;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+#btnHome{
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #E1E1E6;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 12px 32px ;
+  color: #FFFFFF;
+  justify-items: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

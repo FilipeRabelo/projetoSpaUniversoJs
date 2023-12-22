@@ -1,0 +1,42 @@
+body{
+  background: url("../img/imgExploracao.png") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+
+  width: 100%;
+  aspect-ratio: 16/9;  /* USANDO A PROPORÇÃO ESTICANOD A IMAGEM */
+  object-fit: cover;   /* FAZENDO ELA COBIRI TODO A O ESPAÇO */
+
+  height: 100vh;
+  place-content: center;
+  place-items: center;
+}
+
+main{
+  display: grid;
+  row-gap: 16px;
+
+  height: auto;
+  width: 648px;
+
+  margin-left: 102px;
+  margin-bottom: 256px;
+  transition: 1s revert;
+}
+
+h1{
+  margin-top: 63px;
+  line-height: 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  transition: 1s ;
+}
+
+p{
+  font-weight: 400;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
