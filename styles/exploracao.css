@@ -48,10 +48,11 @@ p{
     padding: 1rem;
     display: grid;
     place-content: flex-start;
-    transition: 1s;
+    transition: none;
   }
   h1{
     transition: none;
     margin-top: 0;
   }
 }
+
