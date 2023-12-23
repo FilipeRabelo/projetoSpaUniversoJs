@@ -29,11 +29,11 @@ body{
   transition: 1s;
 }
 
-#btnHome:hover{
-  transition: background-color;
-  background-color: #FFFFFF;
-  color: black;
-}
+/*#btnHome:hover{*/
+/*  transition: background-color;*/
+/*  background-color: #FFFFFF;*/
+/*  color: black;*/
+/*}*/
 
 #btnHome{
   text-align: center;
@@ -53,6 +53,17 @@ body{
   justify-content: center;
   align-items: center;
   gap: 8px;
+  transition: 1s;
+}
+
+#btnHome:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.9); /* Efeito de luzes  */
+  /*box-shadow: white;*/
+  color: white;
+  background-color: rgba(0, 0, 200, 0.3);
+
+  /*transition: box-shadow 0.1s ease-in-out;   !* Transição suave *!*/
+  transition: color 1.0s;
 }
 
 
@@ -60,20 +71,92 @@ body{
   #containerHome, div, h1, a{
     align-content: flex-start;
   }
+
+  #homeH1{
+    font-size: 2.5rem;
+  }
+
 }
 
 
+/* EFEITOS DE FOGOS DE ARTIFICO */
+
+/* Estilize o container para os fogos de artifício */
+.fireworks-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Estilize os elementos dos fogos de artifício */
+.firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f00; /* Cor dos fogos de artifício (pode ser ajustada) */
+  border-radius: 50%;
+  animation: fireworks 2s ease-in-out infinite;
+}
+
+/* Defina a animação dos fogos de artifício */
+@keyframes fireworks {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) rotate(360deg);
+    opacity: 0;
+  }
+}
 
 
+.neon{
+  color: white;
 
+  background: rgba(0, 0, 200, 0.3);
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 
+  /*border: 2px solid rgba(0, 0, 200, 0.6);*/
 
+  /*border-radius: 10px;*/
+  padding: 3px 10px;
+  display: inline-block;
+  /*cursor: pointer;*/
+  box-shadow: 0 0 40px rgba(0, 0, 255, 0.9);
+  animation: pulse 1s infinite alternate;
+}
 
+.neon:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.9); /* Efeito de luzes  */
+  /*box-shadow: white;*/
+  color: rgba(0, 0, 255, 0.9);
+  background-color: rgba(0, 0, 255, 0.9);
 
+  transition: box-shadow 0.1s ease-in-out;   /* Transição suave */
+  /*transition: color 1.0s;*/
+}
 
+@keyframes pulse {
 
+  0% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+  }
 
+  100% {
+    box-shadow: 0 0 40px rgba(0, 0, 255, 0.9); /* Brilho aumentado */
+  }
 
+}
 
 
 
